@@ -108,7 +108,7 @@ header video {
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
-    pointer-events: none;
+    pointer-events: fill;
     cursor: pointer;
     z-index: 50;
 }
