@@ -44,6 +44,7 @@ h2{
 } */
 .ways__item img{
     width: 100%;
+    cursor: pointer;
 }
 
 header {
@@ -78,7 +79,7 @@ header video {
 
 
 
-.models{
+.wrapper{
     display: block;
     position: fixed;
     width: 100vw;
@@ -90,6 +91,7 @@ header video {
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
+    pointer-events: visible;
 }
 .models__item{
     display: block;
@@ -106,6 +108,9 @@ header video {
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
+    pointer-events: none;
+    cursor: pointer;
+    z-index: 50;
 }
 ._active{
     visibility: visible;

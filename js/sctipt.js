@@ -1,14 +1,12 @@
 let LinksAll = document.querySelectorAll('.ways__item');
 let modelsAll = document.querySelectorAll('.models__item');
-let models = document.querySelector('.models');
+let wrapper = document.querySelector('.wrapper');
 for (let i = 0; i < LinksAll.length; i++) {
-  console.log(i)
   LinksAll[i].onclick = function () {
-    console.log(models)
-    models.classList.add('_active');
+    wrapper.classList.add('_active');
     modelsAll[i].classList.add('_active');
-    models.onclick = function (i) {
-      models.classList.remove('_active');
+    wrapper.onclick = function () {
+      wrapper.classList.remove('_active');
       modelsAll[i].classList.remove('_active');
     }
   }
