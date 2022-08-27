@@ -58,7 +58,7 @@ header {
     overflow: hidden;
 }
 
-header video {
+.video, .canvas {
     display: none;
     position: absolute;
     top: 50%;
@@ -71,7 +71,7 @@ header video {
 }
 
 @media (max-width: 768px) {
-    header video {
+    .video, .canvas {
         display: block;
     }
 }
@@ -108,7 +108,7 @@ header video {
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
-    pointer-events: fill;
+    pointer-events: none;
     cursor: pointer;
     z-index: 50;
 }
